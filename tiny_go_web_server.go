@@ -5,6 +5,6 @@ import (
 )
 
 func main() {
-        http.Handle("/", http.FileServer(http.Dir("./tiny_go_web_server")))
+        http.Handle("/", http.FileServer(http.Dir("./tiny_go_web")))
         http.ListenAndServe(":8282", nil)
 }
