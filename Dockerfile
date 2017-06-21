@@ -11,7 +11,7 @@ WORKDIR /
 
 COPY --from=build-env /go/tiny_go_web_server .
 
-COPY /tiny_go_web_server .
+COPY /tiny_go_web_server ./tiny_go_web_server
 
 EXPOSE 8282
 
