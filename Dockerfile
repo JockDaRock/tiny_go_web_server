@@ -9,7 +9,7 @@ FROM alpine
 
 WORKDIR /
 
-COPY --from=build-env /go/escape-button-server .
+COPY --from=build-env /go/tiny_go_web_server .
 
 COPY /tiny_go_web_server ./tiny_go_web_server
 
